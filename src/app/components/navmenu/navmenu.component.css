@@ -1,0 +1,119 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nosotros {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #5a7bdd, #7fa5f8); /* Degradado azul claro */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+/* Navegación principal */
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000; /* Cambia el color del texto a negro al hacer hover */
+}
+
+/* Estilo destacado para "Contáctenos" */
+.nav-link.highlight {
+  background-color: #ffd700; /* Amarillo para resaltar */
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-link.highlight:hover {
+  background-color: #ffcc00; /* Un tono de amarillo más oscuro al hacer hover */
+  color: #000;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

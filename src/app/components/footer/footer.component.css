@@ -1,0 +1,187 @@
+/* Estilos base para el layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor principal para ocupar el espacio disponible */
+#main-content {
+  flex: 1;
+}
+
+/* Footer configurado para mantenerse en la parte inferior */
+#footer {
+  background-color: #1F2937; /* Fondo oscuro */
+  color: #F3F4F6; /* Texto gris claro */
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+  margin-top: auto;
+}
+
+/* Sección superior del footer */
+#footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Columna de contacto */
+#footer .footer-contact {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Otros estilos para el footer */
+#footer h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3B82F6; /* Azul claro */
+  margin-bottom: 15px;
+}
+
+#footer .footer-contact p {
+  font-size: 1rem;
+  color: #9CA3AF; /* Gris claro */
+  margin-bottom: 20px;
+}
+
+#footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+#footer .social-links a {
+  color: #F3F4F6;
+  background-color: #2D3748;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#footer .social-links a:hover {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+/* Información agrupada con diseño de tarjetas */
+#footer .info-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 700px;
+}
+
+#footer .info-box {
+  flex: 1 1 45%; /* Cada cuadro ocupa aproximadamente la mitad del contenedor */
+  padding: 20px;
+  background-color: #FFFFFF; /* Fondo blanco */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra alrededor */
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #1F2937; /* Texto oscuro */
+  max-width: 350px;
+}
+
+#footer .info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#footer .info-box i {
+  font-size: 2rem;
+  color: #3B82F6; /* Azul claro */
+  margin-bottom: 10px;
+}
+
+#footer .info-box h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1F2937; /* Texto oscuro */
+}
+
+#footer .info-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6B7280; /* Gris oscuro */
+}
+
+/* Links */
+#footer .footer-links {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: left;
+}
+
+#footer .footer-links h4 {
+  font-size: 1.4rem;
+  color: #3B82F6;
+  margin-bottom: 15px;
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-links ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-links ul li i {
+  margin-right: 8px;
+  color: #3B82F6;
+}
+
+#footer .footer-links ul li a {
+  color: #F3F4F6;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#footer .footer-links ul li a:hover {
+  color: #3B82F6;
+}
+
+/* Créditos */
+#footer .credits {
+  font-size: 0.9rem;
+  color: #9CA3AF;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  #footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .info-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #footer .info-box {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sistemaweb</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <app-root></app-root>
+
+</body>
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Selecciona todos los botones de filtro
+    const filters = document.querySelectorAll('#portfolio-flters li');
+    const items = document.querySelectorAll('.portfolio-item');
+  
+    // Añade un evento de clic a cada botón de filtro
+    filters.forEach(filter => {
+      filter.addEventListener('click', () => {
+        // Remueve la clase activa de todos los botones y agrégala al seleccionado
+        filters.forEach(f => f.classList.remove('filter-active'));
+        filter.classList.add('filter-active');
+  
+        // Filtra los elementos
+        const filterValue = filter.getAttribute('data-filter');
+        items.forEach(item => {
+          if (filterValue === '*' || item.classList.contains(filterValue.substring(1))) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+    </script> -->
+  
+</html>

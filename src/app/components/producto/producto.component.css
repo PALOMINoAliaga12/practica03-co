@@ -1,0 +1,106 @@
+/* Fondo y estilo general de la sección */
+.section-title {
+  text-align: center;
+  color: #1e3a8a;
+  padding: 80px 0 40px; /* Ajuste de padding superior */
+  background: #ffffff;
+  border-bottom: 1px solid #d1d5db;
+  margin-top: 60px; /* Ajuste de margen superior para evitar superposición con el navbar */
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilo de las categorías */
+#portfolio-flters {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+
+#portfolio-flters li {
+  cursor: pointer;
+  padding: 8px 20px;
+  background-color: #e5e7eb;
+  color: #333;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  border: 1px solid #d1d5db;
+}
+
+#portfolio-flters .filter-active {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+#portfolio-flters li:hover {
+  background-color: #c7d2fe;
+}
+
+/* Estilo del contenedor de portafolio */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+/* Tarjeta de cada producto */
+.portfolio-item {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.portfolio-info {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.portfolio-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 100%;
+    max-width: 160px;
+  }
+}

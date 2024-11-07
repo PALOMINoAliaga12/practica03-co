@@ -1,0 +1,86 @@
+/* Aseguramos que el body y html no tengan márgenes y rellenos */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Evita desbordamiento horizontal */
+}
+
+/* Ajustes en la home */
+.home {
+  position: relative;
+  padding-top: 60px; /* Ajuste para evitar que el banner se superponga a la navbar */
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: calc(100vh - 60px); /* Ocupa toda la pantalla menos la navbar */
+  background-image: url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #f0f4f8; /* Texto blanco azulado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo del overlay */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 25, 47, 0.6); /* Azul oscuro translúcido */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* Estilos del texto dentro del banner */
+.banner-text {
+  text-align: right;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.banner-text h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #b0bec5; /* Gris claro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .banner-text h2 {
+    font-size: 1.8rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: rgba(3, 21, 189, 0.8); /* Fondo azul oscuro translúcido */
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
